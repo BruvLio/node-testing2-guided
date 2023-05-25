@@ -23,11 +23,11 @@ async function insert(hobbit) {
 			return db('hobbits').where('id', id).first();
 		});
 }
-
+//eslint-disable-next-line
 async function update(id, changes) {
 	return null;
 }
-
+//eslint-disable-next-line
 function remove(id) {
 	return null;
 }
