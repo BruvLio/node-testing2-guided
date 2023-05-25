@@ -25,9 +25,10 @@ async function insert(hobbit) {
 }
 //eslint-disable-next-line
 async function update(id, changes) {
-	return null;
+	await db('hobbits').where({ id }).update(changes);
+	return db('hobbits').where({ id }).first();
 }
 //eslint-disable-next-line
 function remove(id) {
-	return null;
+	return db('hobbits').where({ id }).delete();
 }
