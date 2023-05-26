@@ -37,7 +37,7 @@ describe('getById', () => {
 	});
 });
 
-describe('inser', () => {
+describe('insert', () => {
 	const bilbo = { name: 'bilbo' };
 	test('resolves the newly created hobbits', async () => {
 		const result = await Hobbit.insert(bilbo);
